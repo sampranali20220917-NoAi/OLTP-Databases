@@ -55,28 +55,63 @@ So, Customer ID helps us to link both Relations (Customer & Order) Together.
 
 This is how Relational Database System works in real time projects and Applications by connecting n no. of Tables or Relation using the Parent-Child Relationship Philosophy. 
 
-**What Problems People faced when there were no Relational Databases?**
+##What Problems People faced when there were no Relational Databases?
 Before relational databases early 1970s, Engineers used file-based systems and hierarchical/network databases (like IMS, CODASYL). These caused several serious (“grave”) problems.
 
-Major Problem 1: Data Redundancy i.e. Duplicate Data Every where
-Major Problem 2: Data Inconsistency i.e. different copies of same data but inconsistent. 
-Major Problem 3: No Proper Relationship between the Data i.e. No clean way to link data across multiple Files.
-Major Problem 4: Strong dependency between Program and Data.
-Major Problem 5: Difficult to Read and Access data i.e. for every new query Folks had to write New Custom code.
-Major Problem 6: NO data Integrity.
-Major Problem 7: Concurrency Issues i.e. if multiple users are trying to read the data, then there will be Conflict.
-Major Problem 8: No Transaction Management i.e. no Operation was Atomic in nature.
-Major Problem 9: Poor Scalability i.e. with growing data, systems were did not scaled well hence difficult to manage,maintain
+- **Major Problem 1: Data Redundancy.** 
+ - Duplicate Data Every where
+  
+- **Major Problem 2: Data Inconsistency.** 
+ - Different copies of same data but inconsistent. 
+  
+- **Major Problem 3: No Proper Relationship between the Data.** 
+ - No clean way to link data across multiple Files.
+  
+- **Major Problem 4: Strong dependency between Program and Data.**
+ - Changing or modifying data would break the Application code.
+  
+- **Major Problem 5: Difficult to Read and Access data**  
+ - For every new query Folks had to write New Custom code.
+  
+- **Major Problem 6: NO data Integrity.**
+ - Invalid, duplicate, corrupt Data.
+  
+- **Major Problem 7: Concurrency Issues.** 
+ - If multiple users are trying to read the data, then there will be Conflict.
+  
+- **Major Problem 8: No Transaction Management.** 
+ - No Operation was Atomic in nature.
+  
+- **Major Problem 9: Poor Scalability.** 
+ - With growing data, systems were did not scaled well hence difficult to manage,maintain.
 
-**How Relational Databases solved these Major Problems?**
-Solution for Major Problem 1: Normalization + Relationships.
-Solution for Major Problem 2: Data stored in single place, i.e. Single Source of Truth.
-Solution for Major Problem 3: Primary key + Foreign Key making data more structured and simple.
-Solution for Major Problem 4: Data Independence at 2 levels
-1st Level: Logical Independence: change schema without affecting queries much.
-2ndLevel: Physical Independence: change storage without affecting applications.
-Solution for Major Problem 5: use SQL instead of writing custom codes every time.
-Solution for Major Problem 6: Constraints 
-Solution for Major Problem 7: Concurrency control + Isolation (row/table level locking)
-Solution for Major Problem 8: ACID Transactions
-Solution for Major Problem 9: Improve Scalability by adding Indexes, query optimization, Partition, Replication etc.
+##How Relational Databases solved these Major Problems?
+
+- **Solution for Major Problem 1:**
+ - Normalization + Relationships.
+  
+- **Solution for Major Problem 2:** 
+ - Data stored in single place, i.e. Single Source of Truth.
+  
+- **Solution for Major Problem 3:** 
+ - Primary key + Foreign Key making data more structured and simple.
+  
+- **Solution for Major Problem 4:** 
+ - Data Independence at 2 levels
+ - 1st Level: Logical Independence: change schema without affecting queries much.
+ - 2ndLevel: Physical Independence: change storage without affecting applications.
+  
+- **Solution for Major Problem 5:** 
+ - Use SQL instead of writing custom codes every time.
+  
+- **Solution for Major Problem 6:**
+ - Constraints
+   
+- **Solution for Major Problem 7:**
+ - Concurrency control + Isolation (row/table level locking)
+  
+- **Solution for Major Problem 8:**
+ - ACID Transactions
+  
+- **Solution for Major Problem 9:**
+ - Improve Scalability by adding Indexes, query optimization, Partition, Replication etc.

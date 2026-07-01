@@ -2,10 +2,10 @@ We have heard of Relational Databases very very frequently. Almost every enginee
 
 So, lets begin with the Boring defintion of Relational Database.
 
-Functional Definition:
+**Functional Definition**:
 A Relational Database is a System that stores Data in the Form of Tables (similar to excel/Google Spread sheets). It helps us to organize data cleanly in the format of Rows & Columns which is Structured Data. Data which Humans can read and understand without any extra effort.
 
-Technical Definition:
+**Technical Definition**:
 A Relational Database is a System that stores Data in "Relations" i.e. "Tables" and uses a Special Language i.e. "Structured Query Language aka SQL" to manage and query data while enforcing and maintaining Data Integrity, Consistency Principles.
 
 A Table is called a "Relation".
@@ -55,7 +55,7 @@ So, Customer ID helps us to link both Relations (Customer & Order) Together.
 
 This is how Relational Database System works in real time projects and Applications by connecting n no. of Tables or Relation using the Parent-Child Relationship Philosophy. 
 
-What Problems People faced when there were no Relational Databases?
+**What Problems People faced when there were no Relational Databases?**
 Before relational databases early 1970s, Engineers used file-based systems and hierarchical/network databases (like IMS, CODASYL). These caused several serious (“grave”) problems.
 
 Major Problem 1: Data Redundancy i.e. Duplicate Data Every where
@@ -68,7 +68,7 @@ Major Problem 7: Concurrency Issues i.e. if multiple users are trying to read th
 Major Problem 8: No Transaction Management i.e. no Operation was Atomic in nature.
 Major Problem 9: Poor Scalability i.e. with growing data, systems were did not scaled well hence difficult to manage,maintain
 
-How Relational Databases solved these Major Problems?
+**How Relational Databases solved these Major Problems?**
 Solution for Major Problem 1: Normalization + Relationships.
 Solution for Major Problem 2: Data stored in single place, i.e. Single Source of Truth.
 Solution for Major Problem 3: Primary key + Foreign Key making data more structured and simple.
